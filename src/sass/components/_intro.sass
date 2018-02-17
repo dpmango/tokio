@@ -1,0 +1,170 @@
+.intro-header
+
+.intro-logo
+  max-width: 247px
+  margin-left: auto
+  margin-right: auto
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 20px
+  background: #171717
+  transition: .25s $ease
+  svg
+    width: 101px
+  &--no-mark
+    margin-top: -50px
+    .logo-mark
+      display: none
+  &:hover
+    background: darken(#171717, 5%)
+
+
+.intro
+  margin: auto 0
+  padding: 100px 0 75px 0
+  &__name
+    font-family: 'BravoRG'
+    font-size: 80px
+    text-align: center
+    line-height: 1
+    transform: translateY(-0.5em)
+
+  &__row
+    display: flex
+    max-width: 910px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 80px
+    margin-bottom: 85px
+
+  &__card
+    display: block
+    flex: 0 1 50%
+    position: relative
+    overflow: hidden
+    padding: 35px 30px
+    margin: 20px
+    min-height: 280px
+    img
+      position: absolute
+      z-index: 1
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      transition: .25s $ease
+    span
+      display: inline-block
+      position: relative
+      z-index: 3
+      font-family: 'BravoRG'
+      line-height: 1
+      font-size: 32px
+      letter-spacing: 0.05em
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute 0
+      z-index: 2
+      background: linear-gradient(35deg, rgba(0, 0, 0, 0.56) 20%, rgba(0, 0, 0, 0.01) 100%)
+    &:hover
+      img
+        transform: translate(-50%,-50%) scale(1.03)
+
+  &__cta
+    text-align: center
+    transform: translateY(25px)
+
+  &__show-results
+    font-size: 24px
+    text-align: center
+    margin-bottom: 25px
+
+  &__tags
+    margin-top: 15px
+    margin-left: -8px
+    margin-right: -8px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__tag
+    flex: 0 1 auto
+    margin: 8px
+    display: flex
+    align-items: center
+    background: rgba(#F5F5F5, .05)
+    color: #B9BBC4
+    padding: 5px 15px 6px 30px
+    border-radius: 30px
+    transition: .25s $ease
+    span
+      display: inline-block
+      margin-right: 10px
+      font-size: 14px
+    &-remove
+      flex: 0 0 auto
+      padding: 5px
+      cursor: pointer
+      color: #A7A9B5
+      font-size: 0
+      &:hover
+        color: white
+    .ico
+      font-size: 11px
+
+    &:hover
+      background: rgba(#F5F5F5, .15)
+
+
+.options-row
+  display: flex
+  flex-wrap: wrap
+  font-size: 0
+  margin: 15px -88px 50px -88px
+  &__card
+    flex: 0 1 calc(20% - 6px)
+    position: relative
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    padding: 35px 15px
+    margin: 3px
+    background: #171717
+    min-height: 320px
+    transition: .25s $ease
+    img
+      position: absolute
+      z-index: 1
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      transition: .25s $ease
+    span
+      display: inline-block
+      margin-top: auto
+      position: relative
+      z-index: 3
+      font-family: 'BravoRG'
+      text-transform: uppercase
+      line-height: 1
+      letter-spacing: 0.05em
+      font-size: 36px
+      text-align: center
+    &:hover
+      img
+        filter: contrast(125%)
+    &--no-img
+      min-height: 120px
+      &:hover
+        background: #A83939
+      span
+        margin-bottom: auto

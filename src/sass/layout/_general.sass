@@ -1,6 +1,7 @@
 *
   box-sizing: border-box
   outline: none
+  -webkit-overflow-scrolling: touch
 
 a
   color: inherit
@@ -14,9 +15,9 @@ ul
     display: inline-block
 
 body, html
-  background: white
-  color: $fontColor
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  background: #050505
+  color: #DEDEDE
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size: 16px
   min-width: 320px
   max-width: 100%
@@ -34,21 +35,14 @@ body, html
     flex: 1 0 auto
     display: flex
     flex-direction: column
-    // header offset ex
-    padding-top: 100px
 
 .container
-  max-width: 1200px
+  max-width: 1096px
+  background: #0D0D0D
   width: 100%
   margin-left: auto
   margin-right: auto
-  padding-left: 40px
-  padding-right: 40px
 
-+r($mobile)
-  .container
-    padding-left: 20px
-    padding-right: 20px
 
 // REMOVE FOR PRODUCTION !
 .dev-bp-debug

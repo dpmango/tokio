@@ -1,0 +1,92 @@
+include shared/_mixins
+// TO BE LOADED WITH AJAX        
+
+.card-modal
+  .card-modal__wrapper
+    // image
+    .card-modal__image
+      img(src='img/wideBig.png' srcset='img/wideBig@2x.png 2x')
+    
+    // main
+    .card-modal__main
+      .card-modal__name Cuvée Emilien Rouge Château Le Puy 
+      // scope
+      .card-modal__scope
+        .card-modal__category Красное сухое
+        .card-modal__rating
+          span Рейтинг
+          // css icons (_icons.sass)
+          i.icon.icon-rate
+          i.icon.icon-rate
+          i.icon.icon-rate
+          i.icon.icon-rate
+          i.icon.icon-rate.icon-rate--blank
+      
+      // description (dahsed block)
+      .card-modal__description
+        .card-modal__text 
+          p Полнотелое, ароматное, цитрусовые, минеральные, белые фрукты, цветочные ароматы.
+        
+        .card-modal__icons
+          .card-modal__icon
+            +icon('ico-meat')
+            span Мясо
+          .card-modal__icon
+            +icon('ico-soup')
+            span Суп
+          .card-modal__icon
+            +icon('ico-white-meat')
+            span Белое мясо
+            
+      
+      // cta
+      .card-modal__cta
+        .card-modal__price 2 600 ₽
+        
+        a(href="#").btn.btn-order
+          span Заказать 
+          +icon('ico-add')
+      
+      // table
+      .card-modal__table
+        .card-modal__table-col
+          .card-modal__table-section
+            span Страна
+            span Франция
+          .card-modal__table-section
+            span Регион
+            span Бордо
+          .card-modal__table-section
+            span Производитель
+            span Château Le Puy 
+          .card-modal__table-section
+            span Поставщик
+            span Vinopolis      
+            
+        .card-modal__table-col
+          .card-modal__table-section
+            span Крепость
+            span 12.5%
+          .card-modal__table-section
+            span Выдержка
+            span Дуб
+          .card-modal__table-section
+            span Сорт винограда
+            span Лоурейро, Альбариньо
+          .card-modal__table-section
+            span Аппеласьон
+            span Cotes de Francs  
+            
+        .card-modal__table-col
+          .card-modal__table-section
+            span Объем 
+            span 750 ml
+          .card-modal__table-section
+            span Венификация
+            span Цемент
+          .card-modal__table-section
+            span Тип
+            span Bio
+          .card-modal__table-section
+            span Тип вина
+            span Тихое  

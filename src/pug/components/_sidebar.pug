@@ -1,0 +1,122 @@
+// SIDEBAR
+.sidebar
+  .sidebar__wrapper
+    a(href="#").sidebar__logo
+      include ../../inline-svg/logo.svg
+    
+    // filters
+    .sidebar__filters
+      // group
+      .sidebar__group.is-active
+        .sidebar__group-head Тип вина
+        .sidebar__group-contents
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_1_1" id="checkbox_1_1" checked)
+              label(for="checkbox_1_1")
+                span Игристое (54)
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_1_2" id="checkbox_1_2")
+              label(for="checkbox_1_2")
+                span Тихое (247)
+
+      // group
+      .sidebar__group.is-active
+        .sidebar__group-head Цвет
+        .sidebar__group-contents
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_1" id="checkbox_2_1" checked)
+              label(for="checkbox_2_1")
+                span Белое (76)
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Красное (98) 
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_3" id="checkbox_2_3" checked)
+              label(for="checkbox_2_3")
+                span Розовое (23) 
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_4" id="checkbox_2_4")
+              label(for="checkbox_2_4")
+                span Оранжевое (5)    
+                
+      // group
+      .sidebar__group
+        .sidebar__group-head Выдержка
+        .sidebar__group-contents
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_1" id="checkbox_2_1" checked)
+              label(for="checkbox_2_1")
+                span Свежеее (76)
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Старое (98) 
+    
+      // group
+      .sidebar__group
+        .sidebar__group-head Прозводитель
+        .sidebar__group-contents
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_1" id="checkbox_2_1" checked)
+              label(for="checkbox_2_1")
+                span Масс-маркет (206)
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Частные винодельни (23)   
+                          
+      // group
+      .sidebar__group
+        .sidebar__group-head Страна
+        .sidebar__group-contents
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_1" id="checkbox_2_1" checked)
+              label(for="checkbox_2_1")
+                span Франция (106)
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Испания (73) 
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Арегнтина (28) 
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Италия (38) 
+                
+      // group
+      .sidebar__group
+        .sidebar__group-head Уровень сахара
+        .sidebar__group-contents
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_1" id="checkbox_2_1" checked)
+              label(for="checkbox_2_1")
+                span Сухое (59)
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Полусухое (23) 
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" name="checkbox_2_2" id="checkbox_2_2")
+              label(for="checkbox_2_2")
+                span Полусладкое (28) 

@@ -72,6 +72,28 @@ gulp.task('sprite:svg', function() {
     .pipe(gulp.dest(config.dest.img));
 });
 
+gulp.task('svg-minify', function() {
+  return gulp
+    .src(config.src.root + '/inline-svg/*.svg')
+    .pipe(plumber({
+        errorHandler: config.errorHandler
+    }))
+    .pipe(svgmin({
+        js2svg: {
+            pretty: true
+        },
+        plugins: [{
+            removeDesc: true
+        }, {
+            cleanupIDs: true
+        }, {
+            mergePaths: false
+        }]
+    }))
+    .pipe(gulp.dest(config.src.root + '/inline-svg/min'));
+});
+
 gulp.task('sprite:svg:watch', function() {
     gulp.watch(config.src.iconsSvg + '/*.svg', ['sprite:svg']);
+    gulp.watch(config.src.root + '/inline-svg/*.svg', ['svg-minify']);
 });

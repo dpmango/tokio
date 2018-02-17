@@ -1,11 +1,29 @@
 $sprite: (
-	logo: (
+	arrow: (
+		offset-x: 0px,
+		offset-y: -30px,
+		width: 10px,
+		height: 7px,
+		total-width: 46px,
+		total-height: 37px,
+		image: '../img/sprite.png'
+	),
+	checked: (
+		offset-x: -30px,
+		offset-y: 0px,
+		width: 16px,
+		height: 11px,
+		total-width: 46px,
+		total-height: 37px,
+		image: '../img/sprite.png'
+	),
+	italy: (
 		offset-x: 0px,
 		offset-y: 0px,
-		width: 300px,
-		height: 70px,
-		total-width: 300px,
-		total-height: 70px,
+		width: 20px,
+		height: 20px,
+		total-width: 46px,
+		total-height: 37px,
 		image: '../img/sprite.png'
 	),
 );
@@ -64,6 +82,12 @@ $sprite: (
 
 
 
-	.icon-logo {
-		@include sprite(logo)
+	.icon-arrow {
+		@include sprite(arrow)
+	}
+	.icon-checked {
+		@include sprite(checked)
+	}
+	.icon-italy {
+		@include sprite(italy)
 	}

@@ -1,0 +1,26 @@
+---
+title: INTRO
+---
+extends shared/_layout
+block content
+  
+  // INTRO HEADER
+  .intro-header
+    a(href="#").intro-logo
+      include ../inline-svg/logo.svg
+
+  // INTRO MAIN
+  .intro
+    .container
+      .intro__name Винная карта
+      
+      .intro__row
+        a(href="#pdf-link" target="_blank").intro__card
+          img(src='img/introMain1.jpg' srcset='img/introMain1@2x.jpg 2x')
+          span Смотреть <br> винную карту pdf
+        a(href="step1.html").intro__card
+          img(src='img/introMain2.jpg' srcset='img/introMain2@2x.jpg 2x')
+          span Подобрать вино <br> по параметрам
+      
+      .intro__cta
+        a(href='#').btn.btn-primary Перейти в каталог вин

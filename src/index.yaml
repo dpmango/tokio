@@ -1,7 +1,13 @@
-ProjectTitle: Project-name
+ProjectTitle: Wine catalog
 
 PageList:
-- file: homepage.html
-  ready: 100
-- file: page.html
-  ready: 0
+- file: intro.html
+  ready: 80
+- file: step1.html
+  ready: 80
+- file: step2.html
+  ready: 5
+- file: step3.html
+  ready: 5
+- file: catalog.html
+  ready: 80
