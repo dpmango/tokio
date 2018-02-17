@@ -6,69 +6,26 @@ block content
   
   // INTRO HEADER
   .intro-header
-    a(href="#").intro-logo.intro-logo--no-mark
+    a(href="intro.html").intro-logo.intro-logo--no-mark
       include ../inline-svg/logo.svg
 
-  // STEP 1
+  // STEP 2
   .intro
     .container
       .intro__name Подобрать вино по параметрам
       
+      .intro__instruction Выберите вино по типу блюд, с которыми оно сочетается
+      
       // tags
-      .intro__tags
-        .intro__tag
-          span от 2 690 ₽ до 8 000 ₽
-          .intro__tag-remove
-            +icon('ico-close')
-        .intro__tag
-          span 0.75l
-          .intro__tag-remove
-            +icon('ico-close')
-        .intro__tag
-          span 1965
-          .intro__tag-remove
-            +icon('ico-close')
-        .intro__tag
-          span Красное
-          .intro__tag-remove
-            +icon('ico-close')
-        .intro__tag
-          span под мясо
-          .intro__tag-remove
-            +icon('ico-close')
+      .intro__range
+        .ui-range__from
+        .ui-range__to
+        .ui-range
           
-      // options
-      .options-row
-        a(href="#").options-row__card
-          img(src='img/optionCard1.jpg' srcset='img/optionCard1@2x.jpg 2x')
-          span По географии
-        a(href="#").options-row__card
-          img(src='img/optionCard2.jpg' srcset='img/optionCard2@2x.png 2x')
-          span По меню
-        a(href="#").options-row__card
-          img(src='img/optionCard3.jpg' srcset='img/optionCard3@2x.jpg 2x')
-          span По бокалам
-        a(href="#").options-row__card
-          img(src='img/optionCard4.jpg' srcset='img/optionCard4@2x.jpg 2x')
-          span По стилю
-        a(href="#").options-row__card
-          img(src='img/optionCard5.jpg' srcset='img/optionCard5@2x.jpg 2x')
-          span По фишкам
-        // no img row
-        a(href="#").options-row__card.options-row__card--no-img
-          span По цене
-        a(href="#").options-row__card.options-row__card--no-img
-          span По обьему
-        a(href="#").options-row__card.options-row__card--no-img
-          span По сахару
-        a(href="#").options-row__card.options-row__card--no-img
-          span По винтажу
-        a(href="#").options-row__card.options-row__card--no-img
-          span По градусу    
       
       // show results link
       .intro__show-results
         a(href="#") Показать результат (<span>23</span>)
           
       .intro__cta
-        a(href='catalog.html').btn.btn-primary Перейти в каталог вин
+        a(href='catalog.html').btn.btn-primary Перейти в полный каталог вин

@@ -13,6 +13,7 @@ gulp.task('javascript:vendor', function() {
       path.resolve('bower_components', 'viewport-units-buggyfill/viewport-units-buggyfill.js'),
       path.resolve('bower_components', 'magnific-popup/dist/jquery.magnific-popup.min.js'),
       path.resolve('bower_components', 'barba.js/dist/barba.min.js'),
+      path.resolve('bower_components', 'nouislider/distribute/nouislider.min.js'),
       path.resolve('bower_components', 'jquery-lazy/jquery.lazy.min.js'),
       path.resolve('bower_components', 'animejs/anime.min.js'),
       config.src.js + '/vendor/**/*.js'

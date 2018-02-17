@@ -27,7 +27,9 @@ $(document).ready(function(){
 
     initPopups();
     initSliders();
+    initRangeSlider();
     initLazyLoad();
+    initPS();
 
     // development helper
     _window.on('resize', debounce(setBreakpoint, 200))
@@ -117,6 +119,51 @@ $(document).ready(function(){
   function closeMfp(){
     $.magnificPopup.close();
   }
+
+
+  ////////////
+  // RANGESLIDER
+  ////////////
+  function initRangeSlider(){
+    var range = $('.ui-range').get(0)
+    if ( range ){
+      noUiSlider.create(range, {
+        start: [ 2399, 8399 ],
+        // margin: 300,
+        // limit: 600,
+        connect: true,
+        behaviour: 'tap-drag',
+        step: 100,
+        range: {
+          'min': 399,
+          'max': 12999
+        },
+      });
+
+      var valuesDivs = [
+        $('.ui-range__from'),
+        $('.ui-range__to')
+      ];
+
+      // When the slider value changes, update the input and span
+      range.noUiSlider.on('update', function( values, handle ) {
+        valuesDivs[handle].html(numberWithThousands(Math.floor(values[handle])));
+      });
+    }
+
+  }
+
+  function numberWithThousands(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+
+  function initPS(){
+    var container = document.querySelector('.catalog__category');
+    if ( container ){
+      new PerfectScrollbar(container);
+    }
+  }
+
 
   ////////////
   // UI

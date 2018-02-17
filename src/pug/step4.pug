@@ -1,0 +1,54 @@
+---
+title: STEP4
+---
+extends shared/_layout
+block content
+  
+  // INTRO HEADER
+  .intro-header
+    a(href="intro.html").intro-logo.intro-logo--no-mark
+      include ../inline-svg/logo.svg
+
+  // STEP 2
+  .intro
+    .container
+      .intro__name Подобрать вино по параметрам
+      
+      .intro__instruction Выберите вино по типу блюд, с которыми оно сочетается
+      
+      // tags
+      .intro__styles
+        a(href="#").intro__style
+          span Цветочные
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Легкие
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Среднетелые
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Полнотелые
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Ягодные
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Фруктовые
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Пряные
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Минеральные
+          .intro__style-num 43
+        a(href="#").intro__style
+          span Сливочные
+          .intro__style-num 43
+                    
+      // show results link
+      .intro__show-results
+        a(href="#") Показать результат (<span>23</span>)
+          
+      .intro__cta
+        a(href='catalog.html').btn.btn-primary Перейти в полный каталог вин

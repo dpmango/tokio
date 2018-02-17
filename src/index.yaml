@@ -8,6 +8,8 @@ PageList:
 - file: step2.html
   ready: 5
 - file: step3.html
-  ready: 5
+  ready: 80
+- file: step4.html
+  ready: 80
 - file: catalog.html
   ready: 80

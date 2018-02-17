@@ -29,6 +29,11 @@
     text-align: center
     line-height: 1
     transform: translateY(-0.5em)
+  &__instruction
+    color: #A7A9B5
+    font-size: 18px
+    margin-top: 15px
+    text-align: center
 
   &__row
     display: flex
@@ -119,6 +124,45 @@
 
     &:hover
       background: rgba(#F5F5F5, .15)
+
+  &__range
+    position: relative
+    padding-top: 70px
+    max-width: 915px
+    padding: 50px 0
+    margin: 15vh auto 20vh auto
+
+  &__styles
+    margin: 15vh -10px 20vh -10px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+
+  &__style
+    flex: 0 1 auto
+    margin: 8px 5px
+    display: flex
+    align-items: center
+    border: 1px solid #333333
+    padding: 9px 30px 12px 30px
+    border-radius: 30px
+    font-size: 18px
+    transition: .25s $ease
+    span
+      display: inline-block
+      margin-right: 17px
+      color: white
+    &-num
+      flex: 0 0 auto
+      color: #6E6E6E
+      font-size: 18px
+      transition: .25s $ease
+    &:hover
+      border-color: transparent
+      background: #A83939
+      .intro__style-num
+        color: #C96363
 
 
 .options-row
