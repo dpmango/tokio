@@ -1,0 +1,9 @@
+<svg width="26" height="16" viewBox="0 0 26 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-down</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(-27502 -26190)">
+        <g id="arrow-down">
+            <path d="M 11 11L 9.93934 12.0607L 11 13.1213L 12.0607 12.0607L 11 11ZM -1.06066 1.06066L 9.93934 12.0607L 12.0607 9.93934L 1.06066 -1.06066L -1.06066 1.06066ZM 12.0607 12.0607L 23.0607 1.06066L 20.9393 -1.06066L 9.93934 9.93934L 12.0607 12.0607Z" transform="translate(27504 26192)" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

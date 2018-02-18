@@ -1,0 +1,72 @@
+---
+title: Filter with topbar
+---
+extends shared/_layout
+block content
+  
+  // TOPBAR
+  .topbar(js-topbar).is-active
+    a(href="catalog.html").topbar__wrapper
+      .topbar__logo
+        include ../inline-svg/logo.svg
+      .topbar__name Подобрать вино по параметрам
+      .topbar__toggler
+        +icon('ico-arrow-down')
+        
+  // STEP 1
+  .intro
+    .container
+      // tags
+      .intro__tags
+        .intro__tag
+          span от 2 690 ₽ до 8 000 ₽
+          .intro__tag-remove
+            +icon('ico-close')
+        .intro__tag
+          span 0.75l
+          .intro__tag-remove
+            +icon('ico-close')
+        .intro__tag
+          span 1965
+          .intro__tag-remove
+            +icon('ico-close')
+        .intro__tag
+          span Красное
+          .intro__tag-remove
+            +icon('ico-close')
+        .intro__tag
+          span под мясо
+          .intro__tag-remove
+            +icon('ico-close')
+          
+      // options
+      .options-row
+        a(href="step2_1.html").options-row__card
+          img(data-src='img/optionCard1.jpg' data-srcset='img/optionCard1@2x.jpg 2x' js-lazy)
+          span По географии
+        a(href="step2_2.html").options-row__card
+          img(data-src='img/optionCard2.jpg' data-srcset='img/optionCard2@2x.jpg 2x' js-lazy)
+          span По меню
+        a(href="step2_3.html").options-row__card
+          img(data-src='img/optionCard3.jpg' data-srcset='img/optionCard3@2x.jpg 2x' js-lazy)
+          span По бокалам
+        a(href="filter-tags.html").options-row__card
+          img(data-src='img/optionCard4.jpg' data-srcset='img/optionCard4@2x.jpg 2x' js-lazy)
+          span По стилю
+        a(href="step2_5.html").options-row__card
+          img(data-src='img/optionCard5.jpg' data-srcset='img/optionCard5@2x.jpg 2x' js-lazy)
+          span По фишкам
+        // no img row
+        a(href="filter-price.html").options-row__card.options-row__card--no-img
+          span По цене
+        a(href="filter-tags.html").options-row__card.options-row__card--no-img
+          span По обьему
+        a(href="filter-tags.html").options-row__card.options-row__card--no-img
+          span По сахару
+        a(href="filter-tags.html").options-row__card.options-row__card--no-img
+          span По винтажу
+        a(href="filter-tags.html").options-row__card.options-row__card--no-img
+          span По градусу    
+
+      .intro__cta
+        a(href='catalog.html').btn.btn-primary Перейти в каталог вин

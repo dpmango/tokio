@@ -1,15 +1,25 @@
 ---
-title: CATALOG 2
+title: CATALOG
 ---
 extends shared/_layout
 block content
-                  
+  
+  // TOPBAR
+  .topbar(js-topbar)
+    a(href="filter-drop.html").topbar__wrapper
+      .topbar__logo
+        include ../inline-svg/logo.svg
+      .topbar__name Подобрать вино по параметрам
+      .topbar__toggler
+        +icon('ico-arrow-down')
+  
+    
   // CATALOG
   .catalog.catalog--full
-  
+    .catalog__head Каталог вин
+    .catalog__subhead Вина Италии
     // wrapper
     .catalog__wrapper
-      .catalog__heading Вина Италии
       .catalog__list
         // catalog card 
         .catalog-card(href="catalog-card.html" js-ajax-popup)

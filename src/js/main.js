@@ -63,6 +63,14 @@ $(document).ready(function(){
     parent.find('.sidebar__group-contents').slideToggle()
   })
 
+  //////////
+  // TOPBAR
+  //////////
+
+  _document.on('click', '[js-topbar]', function(){
+    $(this).toggleClass('is-active')
+  })
+
 
   //////////
   // SLIDERS
@@ -208,7 +216,7 @@ $(document).ready(function(){
       throttle: 100,
       scrollDirection: 'vertical',
       effect: 'fadeIn',
-      effectTime: 350,
+      effectTime: 500,
       // visibleOnly: true,
       // placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7...",
       onError: function(element) {
