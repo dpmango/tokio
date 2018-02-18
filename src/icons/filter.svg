@@ -1,0 +1,46 @@
+<svg width="55" height="69" viewBox="0 0 55 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>filter</title>
+    <desc>Created using Figma</desc>
+    <g id="Canvas" transform="translate(-18680 -26712)">
+        <g id="filter">
+            <g id="Vector">
+                <use xlink:href="#path0_stroke" transform="translate(18685 26719)" fill="#A7A9B5"></use>
+            </g>
+            <g id="Ellipse">
+                <mask id="mask0_outline_ins">
+                    <use xlink:href="#path1_fill" fill="white" transform="translate(18680 26740)"></use>
+                </mask>
+                <g mask="url(#mask0_outline_ins)">
+                    <use xlink:href="#path2_stroke_2x" transform="translate(18680 26740)" fill="#A7A9B5"></use>
+                </g>
+            </g>
+            <g id="Vector">
+                <use xlink:href="#path0_stroke" transform="translate(18730 26719)" fill="#A7A9B5"></use>
+            </g>
+            <g id="Vector">
+                <path d="M -1 0L -1 14.5L 1 14.5L 1 0L -1 0ZM -1 23.5L -1 62L 1 62L 1 23.5L -1 23.5Z" transform="translate(18707 26712)" fill="#A7A9B5"></path>
+            </g>
+            <g id="Ellipse 2">
+                <mask id="mask1_outline_ins">
+                    <use xlink:href="#path1_fill" fill="white" transform="translate(18702 26726)"></use>
+                </mask>
+                <g mask="url(#mask1_outline_ins)">
+                    <use xlink:href="#path2_stroke_2x" transform="translate(18702 26726)" fill="#A7A9B5"></use>
+                </g>
+            </g>
+            <g id="Ellipse 2.1">
+                <mask id="mask2_outline_ins">
+                    <use xlink:href="#path1_fill" fill="white" transform="translate(18725 26740)"></use>
+                </mask>
+                <g mask="url(#mask2_outline_ins)">
+                    <use xlink:href="#path2_stroke_2x" transform="translate(18725 26740)" fill="#A7A9B5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <path id="path0_stroke" d="M -1 0L -1 21.5L 1 21.5L 1 0L -1 0ZM -1 30.5L -1 62L 1 62L 1 30.5L -1 30.5Z"></path>
+        <path id="path1_fill" d="M 10 5C 10 7.76142 7.76142 10 5 10C 2.23858 10 0 7.76142 0 5C 0 2.23858 2.23858 0 5 0C 7.76142 0 10 2.23858 10 5Z"></path>
+        <path id="path2_stroke_2x" d="M 8 5C 8 6.65685 6.65685 8 5 8L 5 12C 8.86599 12 12 8.86599 12 5L 8 5ZM 5 8C 3.34315 8 2 6.65685 2 5L -2 5C -2 8.86599 1.13401 12 5 12L 5 8ZM 2 5C 2 3.34315 3.34315 2 5 2L 5 -2C 1.13401 -2 -2 1.13401 -2 5L 2 5ZM 5 2C 6.65685 2 8 3.34315 8 5L 12 5C 12 1.13401 8.86599 -2 5 -2L 5 2Z"></path>
+    </defs>
+</svg>

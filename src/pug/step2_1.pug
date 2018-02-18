@@ -1,0 +1,122 @@
+---
+title: По географии
+---
+extends shared/_layout
+block content
+  
+  // INTRO HEADER
+  .intro-header
+    a(href="intro.html").intro-logo.intro-logo--no-mark
+      include ../inline-svg/logo.svg
+  
+  // NAVIGATION
+  .page-nav
+    .container
+      a(href="filter.html").page-nav__prev
+        +icon('ico-left-arrow')
+
+  // STEP 2
+  .intro
+    .container
+      .intro__name По георгафии
+      .intro__instruction Выберите вино по типу блюд, с которыми оно сочетается
+          
+      // options
+      .checkbox-row.swiper-container(js-slider)
+        .swiper-wrapper
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_1")
+            label(for="checkbox_1")
+              img(data-src='img/geo/geoCard1.jpg' data-srcset='img/geo/geoCard1@2x.jpg 2x' js-lazy)
+              span Россия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_2" checked)
+            label(for="checkbox_2")
+              img(data-src='img/geo/geoCard2.jpg' data-srcset='img/geo/geoCard2@2x.jpg 2x' js-lazy)
+              span Франция
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_3")
+            label(for="checkbox_3")
+              img(data-src='img/geo/geoCard3.jpg' data-srcset='img/geo/geoCard3@2x.jpg 2x' js-lazy)
+              span Испания
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_4")
+            label(for="checkbox_4")
+              img(data-src='img/geo/geoCard4.jpg' data-srcset='img/geo/geoCard4@2x.jpg 2x' js-lazy)
+              span Италия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_5")
+            label(for="checkbox_5")
+              img(data-src='img/geo/geoCard5.jpg' data-srcset='img/geo/geoCard5@2x.jpg 2x' js-lazy)
+              span Япония
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_6")
+            label(for="checkbox_6")
+              img(data-src='img/geo/geoCard6.jpg' data-srcset='img/geo/geoCard6@2x.jpg 2x' js-lazy)
+              span Португалия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_7")
+            label(for="checkbox_7")
+              img(data-src='img/geo/geoCard7.jpg' data-srcset='img/geo/geoCard7@2x.jpg 2x' js-lazy)
+              span Германия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_8")
+            label(for="checkbox_8")
+              img(data-src='img/geo/geoCard8.jpg' data-srcset='img/geo/geoCard8@2x.jpg 2x' js-lazy)
+              span Чили
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_9")
+            label(for="checkbox_9")
+              img(data-src='img/geo/geoCard9.jpg' data-srcset='img/geo/geoCard9@2x.jpg 2x' js-lazy)
+              span Австрия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_10")
+            label(for="checkbox_10")
+              img(data-src='img/geo/geoCard10.jpg' data-srcset='img/geo/geoCard10@2x.jpg 2x' js-lazy)
+              span Арегнтина  
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_11")
+            label(for="checkbox_11")
+              img(data-src='img/geo/geoCard11.jpg' data-srcset='img/geo/geoCard11@2x.jpg 2x' js-lazy)
+              span США  
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_12")
+            label(for="checkbox_12")
+              img(data-src='img/geo/geoCard12.jpg' data-srcset='img/geo/geoCard12@2x.jpg 2x' js-lazy)
+              span Люксенбург
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_13")
+            label(for="checkbox_13")
+              img(data-src='img/geo/geoCard13.jpg' data-srcset='img/geo/geoCard13@2x.jpg 2x' js-lazy)
+              span Венгрия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_14")
+            label(for="checkbox_14")
+              img(data-src='img/geo/geoCard14.jpg' data-srcset='img/geo/geoCard14@2x.jpg 2x' js-lazy)
+              span Юар
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_15")
+            label(for="checkbox_15")
+              img(data-src='img/geo/geoCard15.jpg' data-srcset='img/geo/geoCard15@2x.jpg 2x' js-lazy)
+              span Новая зеландия
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_16")
+            label(for="checkbox_16")
+              img(data-src='img/geo/geoCard16.jpg' data-srcset='img/geo/geoCard16@2x.jpg 2x' js-lazy)
+              span Словения
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_17")
+            label(for="checkbox_17")
+              img(data-src='img/geo/geoCard17.jpg' data-srcset='img/geo/geoCard17@2x.jpg 2x' js-lazy)
+              span Армения
+                                      
+        // swiper btns
+        .swiper-button-prev
+        .swiper-button-next
+          
+      // show results link
+      .intro__show-results
+        a(href="catalog.html") Показать результат (<span>23</span>)
+          
+      .intro__cta
+        a(href='catalog.html').btn.btn-primary Перейти в каталог вин

@@ -1,0 +1,68 @@
+---
+title: По бокалам
+---
+extends shared/_layout
+block content
+  
+  // INTRO HEADER
+  .intro-header
+    a(href="intro.html").intro-logo.intro-logo--no-mark
+      include ../inline-svg/logo.svg
+  
+  // NAVIGATION
+  .page-nav
+    .container
+      a(href="filter.html").page-nav__prev
+        +icon('ico-left-arrow')
+
+  // STEP 2
+  .intro
+    .container
+      .intro__name По бокалам
+      .intro__instruction Выберите вино по типу блюд, с которыми оно сочетается
+          
+      // options
+      .checkbox-row.swiper-container(js-slider)
+        .swiper-wrapper
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_1")
+            label(for="checkbox_1")
+              img(data-src='img/glass/glassCard1.jpg' data-srcset='img/glass/glassCard1@2x.jpg 2x' js-lazy)
+              span Игристые
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_2" checked)
+            label(for="checkbox_2")
+              img(data-src='img/glass/glassCard2.jpg' data-srcset='img/glass/glassCard2@2x.jpg 2x' js-lazy)
+              span Белые
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_3")
+            label(for="checkbox_3")
+              img(data-src='img/glass/glassCard3.jpg' data-srcset='img/glass/glassCard3@2x.jpg 2x' js-lazy)
+              span Красные
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_4")
+            label(for="checkbox_4")
+              img(data-src='img/glass/glassCard4.jpg' data-srcset='img/glass/glassCard4@2x.jpg 2x' js-lazy)
+              span Оранжевые
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_5")
+            label(for="checkbox_5")
+              img(data-src='img/glass/glassCard5.jpg' data-srcset='img/glass/glassCard5@2x.jpg 2x' js-lazy)
+              span Розовые
+          .swiper-slide.checkbox-row__card
+            input(type="checkbox" name="checkbox" id="checkbox_6")
+            label(for="checkbox_6")
+              img(data-src='img/glass/glassCard6.jpg' data-srcset='img/glass/glassCard6@2x.jpg 2x' js-lazy)
+              span Крепленные вина
+
+        
+        // swiper btns
+        .swiper-button-prev
+        .swiper-button-next
+          
+      // show results link
+      .intro__show-results
+        a(href="catalog.html") Показать результат (<span>23</span>)
+          
+      .intro__cta
+        a(href='catalog.html').btn.btn-primary Перейти в каталог вин

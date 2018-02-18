@@ -3,13 +3,27 @@ ProjectTitle: Wine catalog
 PageList:
 - file: intro.html
   ready: 90
-- file: step1.html
+- file: filter.html
   ready: 90
-- file: step2.html
+- file: step2_1.html
   ready: 90
-- file: step3.html
+- file: step2_2.html
   ready: 90
-- file: step4.html
+- file: step2_3.html
+  ready: 90
+- file: step2_5.html
+  ready: 90
+- file: filter-price.html
+  ready: 90
+- file: filter-tags.html
   ready: 90
 - file: catalog.html
   ready: 90
+
+
+- file: depreciated.html
+  ready: 0
+- file: intro-old.html
+  ready: 100
+- file: catalog-old.html
+  ready: 100

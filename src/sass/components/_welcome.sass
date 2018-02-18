@@ -1,0 +1,35 @@
+.intro
+  &__bg
+    background: url('../img/introWelcome.jpg') no-repeat center
+    background-size: cover
+
+  &__welcome
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 830px
+    margin-left: auto
+    margin-right: auto
+    padding-top: 210px
+    padding-bottom: 105px
+
+.welcome-card
+  max-width: 194px
+  color: #A7A9B5
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    size: 194px
+    background: #25292B
+    font-size: 70px
+    transition: .25s $ease
+  &__name
+    margin-top: 25px
+    text-align: center
+    font-size: 20px
+    line-height: 1.2
+  &:hover
+    .welcome-card__icon
+      background: $colorRed
+      color: white

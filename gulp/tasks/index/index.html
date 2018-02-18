@@ -399,13 +399,17 @@
     %>
     <div class="header__updated"><em><%= pages.ProjectTitle %></em> updated <%= day %>.<%= month %>.<%= date.getFullYear() %>, <%= pages.PageList.length %> pages</div>
     <nav class="types">
+      <button data-mode="desktop" data-width="768">
+        <svg class="icon icon-tablet"><use xlink:href="#icon-tablet"></use></svg>
+        <strong>Tablet V</strong>
+        <span>768px</span></button>
       <button data-mode="desktop" data-width="1024">
-        <svg class="icon icon-desktop"><use xlink:href="#icon-desktop"></use></svg>
-        <strong>Desktop</strong>
+        <svg class="icon icon-tablet"><use xlink:href="#icon-tablet"></use></svg>
+        <strong>Tablet H</strong>
         <span>1024px</span></button>
       <button data-mode="wide" class="is-active" data-width="1280">
         <svg class="icon icon-wide"><use xlink:href="#icon-wide"></use></svg>
-        <strong>Desktop HD</strong>
+        <strong>Desktop</strong>
         <span>1280px</span>
       </button>
     </nav>

@@ -1,0 +1,156 @@
+
+.options-row
+  display: flex
+  flex-wrap: wrap
+  font-size: 0
+  margin: 15px -88px 50px -88px
+  &__card
+    flex: 0 1 calc(20% - 6px)
+    position: relative
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    padding: 35px 15px
+    margin: 3px
+    background: #171717
+    min-height: 320px
+    transition: .25s $ease
+    img
+      position: absolute
+      z-index: 1
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      transition: .25s $ease
+    span
+      display: inline-block
+      margin-top: auto
+      position: relative
+      z-index: 3
+      font-family: 'BravoRG'
+      text-transform: uppercase
+      line-height: 1
+      letter-spacing: 0.05em
+      font-size: 36px
+      text-align: center
+    &:hover
+      img
+        filter: contrast(125%)
+    &--no-img
+      min-height: 120px
+      &:hover
+        background: #A83939
+      span
+        margin-bottom: auto
+
+
+.checkbox-row
+  // swiper container level
+  font-size: 0
+  margin: 80px -95px 60px -95px
+  overflow: visible
+  &__card
+    flex: 0 0 225px
+    width: 225px
+    position: relative
+    overflow: hidden
+    background: #171717
+    min-height: 330px
+    cursor: pointer
+    transition: .25s $ease
+    input
+      display: none
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      &:checked
+        + label
+          &::before
+            background-color: rgba(#050505, .8)
+          &::after
+            transform: translate(-50%, -50%) scale(1)
+    label
+      cursor: pointer
+      &::before
+        position: absolute 0
+        z-index: 4
+        display: inline-block
+        content: ' '
+        background-color: transparent
+        transition: all .25s ease-in-out
+      &::after
+        position: absolute
+        z-index: 5
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%) scale(0)
+        display: inline-block
+        content: ' '
+        +sprite(checked-red)
+        transition: transform .2s ease
+    img
+      position: absolute
+      z-index: 1
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      // will-change: filter
+      transition: .25s $ease
+    span
+      display: inline-block
+      z-index: 2
+      font-family: 'BravoRG'
+      text-transform: uppercase
+      line-height: 1
+      letter-spacing: 0.05em
+      white-space: nowrap
+      font-size: 42px
+      text-align: center
+      position: absolute
+      bottom: -17px
+      left: 30px
+      transform-origin: left top 0
+      transform: rotate(-90deg)
+
+  &:not(.is-moving)
+    .checkbox-row__card
+      &:hover
+        img
+          filter: contrast(125%)
+
+  .swiper-button-next, .swiper-button-prev
+    background: none
+    min-height: 330px
+    top: 0
+    margin-top: 0
+    width: 52px
+    padding: 10px
+    display: flex
+    align-items: center
+    &::after
+      display: inline-block
+      content: ' '
+
+  .swiper-button-next
+    &::after
+      +sprite('swiper-right')
+  .swiper-button-prev
+    background: none
+    &::after
+      +sprite('swiper-left')
+
+  .swiper-button-next, .swiper-button-prev
+    transition: opacity .25s $ease
+    &:hover
+      opacity: .7

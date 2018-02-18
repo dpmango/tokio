@@ -1,0 +1,39 @@
+.intro
+
+  &__card
+    display: block
+    flex: 0 1 50%
+    position: relative
+    overflow: hidden
+    padding: 35px 30px
+    margin: 20px
+    min-height: 281px
+    font-size: 0
+    img
+      position: absolute
+      z-index: 1
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      transition: .25s $ease
+    span
+      display: inline-block
+      position: relative
+      z-index: 3
+      font-family: 'BravoRG'
+      line-height: 1
+      font-size: 32px
+      letter-spacing: 0.05em
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute 0
+      z-index: 2
+      background: linear-gradient(35deg, rgba(0, 0, 0, 0.56) 20%, rgba(0, 0, 0, 0.01) 100%)
+    &:hover
+      img
+        transform: translate(-50%,-50%) scale(1.03)

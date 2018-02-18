@@ -1,0 +1,148 @@
+---
+title: CATALOG
+---
+extends shared/_layout
+block content
+  
+  include components/_sidebar
+                                            
+  // CATALOG
+  .catalog
+    .catalog__category
+      a(href="#").catalog__category-item
+        img(data-src='img/catalogCategory1.jpg' data-srcset='img/catalogCategory1@2x.jpg 2x' js-lazy)
+        span К мясу
+      a(href="#").catalog__category-item
+        img(data-src='img/catalogCategory2.jpg' data-srcset='img/catalogCategory2@2x.jpg 2x' js-lazy)
+        span К рыбе
+      a(href="#").catalog__category-item
+        img(data-src='img/catalogCategory3.jpg' data-srcset='img/catalogCategory3@2x.jpg 2x' js-lazy)
+        span К соусу
+      a(href="#").catalog__category-item
+        img(data-src='img/catalogCategory4.jpg' data-srcset='img/catalogCategory4@2x.jpg 2x' js-lazy)
+        span К супам
+                          
+    // wrapper
+    .catalog__wrapper
+      .catalog__heading Вина Италии
+      .catalog__list
+        // catalog card 
+        .catalog-card(href="catalog-card.html" js-ajax-popup)
+          .catalog-card__image
+            img(data-src='img/wine1.png' data-srcset='img/wine1@2x.png 2x' js-lazy)
+          .catalog-card__content
+            .catalog-card__top
+              .catalog-card__country
+                i.icon.icon-italy
+                span Италия
+              .catalog-card__volume 0.75l
+            //desc
+            .catalog-card__description
+              .catalog-card__name Skinny Prosecco <br> Magnum
+              .catalog-card__category Красное полусладкое 
+              .catalog-card__price 1190 ₽
+            //cta btn
+            .catalog-card__cta
+              a(href="#").btn.btn-add
+                +icon('ico-add')
+        // catalog card 
+        .catalog-card(href="catalog-card.html" js-ajax-popup)
+          .catalog-card__image
+            img(data-src='img/wine3.png' data-srcset='img/wine3@2x.png 2x' js-lazy)
+          .catalog-card__content
+            .catalog-card__top
+              .catalog-card__country
+                i.icon.icon-italy
+                span Италия
+              .catalog-card__volume 0.75l
+            //desc
+            .catalog-card__description
+              .catalog-card__name Barollo Cannubi <br> Borgogno
+              .catalog-card__category Красное полусладкое 
+              .catalog-card__price 1390 ₽
+            //cta btn
+            .catalog-card__cta
+              a(href="#").btn.btn-add
+                +icon('ico-add')
+                  
+        // catalog card  -- white 
+        .catalog-card(href="catalog-card.html" js-ajax-popup).catalog-card--white
+          .catalog-card__image
+            img(data-src='img/wine1.png' data-srcset='img/wine1@2x.png 2x' js-lazy)
+          .catalog-card__content
+            .catalog-card__top
+              .catalog-card__country
+                i.icon.icon-italy
+                span Италия
+              .catalog-card__volume 0.75l
+            //desc
+            .catalog-card__description
+              .catalog-card__name Barello di <br> Montenegro
+              .catalog-card__category Белое сухое
+              .catalog-card__price 2990 ₽
+            //cta btn
+            .catalog-card__cta
+              a(href="#").btn.btn-add
+                +icon('ico-add')
+            
+        // next row
+        
+        // catalog card 
+        .catalog-card(href="catalog-card.html" js-ajax-popup).catalog-card--white
+          .catalog-card__image
+            img(data-src='img/wine3.png' data-srcset='img/wine3@2x.png 2x' js-lazy)
+          .catalog-card__content
+            .catalog-card__top
+              .catalog-card__country
+                i.icon.icon-italy
+                span Италия
+              .catalog-card__volume 1l
+            //desc
+            .catalog-card__description
+              .catalog-card__name Barello di <br> Montenegro
+              .catalog-card__category Белое сухое
+              .catalog-card__price 1890 ₽
+            //cta btn
+            .catalog-card__cta
+              a(href="#").btn.btn-add
+                +icon('ico-add')
+        // catalog card 
+        .catalog-card(href="catalog-card.html" js-ajax-popup)
+          .catalog-card__image
+            img(data-src='img/wine1.png' data-srcset='img/wine1@2x.png 2x' js-lazy)
+          .catalog-card__content
+            .catalog-card__top
+              .catalog-card__country
+                i.icon.icon-italy
+                span Италия
+              .catalog-card__volume 0.75l
+            //desc
+            .catalog-card__description
+              .catalog-card__name Luxary Wine
+              .catalog-card__category Красное полусладкое 
+              .catalog-card__price 21590 ₽
+            //cta btn
+            .catalog-card__cta
+              a(href="#").btn.btn-add
+                +icon('ico-add')
+                  
+        // catalog card  -- rose 
+        .catalog-card(href="catalog-card.html" js-ajax-popup).catalog-card--rose
+          .catalog-card__image
+            img(data-src='img/wine3.png' data-srcset='img/wine3@2x.png 2x' js-lazy)
+          .catalog-card__content
+            .catalog-card__top
+              .catalog-card__country
+                i.icon.icon-italy
+                span Италия
+              .catalog-card__volume 0.75l
+            //desc
+            .catalog-card__description
+              .catalog-card__name Skinny Prosecco <br> Magnum
+              .catalog-card__category Красное полусладкое 
+              .catalog-card__price 590 ₽
+            //cta btn
+            .catalog-card__cta
+              a(href="#").btn.btn-add
+                +icon('ico-add')
+            
