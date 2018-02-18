@@ -5,6 +5,8 @@
 .ui-group
   position: relative
   margin-bottom: 20px
+  +r(1024)
+    margin-bottom: 16px
   label
     display: block
     margin-bottom: 10px
@@ -77,6 +79,16 @@
       span
         color: rgba(#FFFFFF, .8)
 
++r(1024)
+  .ui-checkbox
+    label
+      &::before
+        size: 25px
+      &::after
+        left: 5px
+      span
+        font-size: 36px
+        font-size: 16px
 
 .ui-range
   &__from, &__to
@@ -103,3 +115,13 @@
     right: 0
     &::before
       content: 'до'
+
++r(1024)
+  .ui-range
+    &__from, &__to
+      font-size: 16px
+      min-width: 130px
+      padding: 7px 20px 10px 20px
+      &::before
+        font-size: 16px
+        margin-right: 16px

@@ -29,7 +29,7 @@ html.mfp-helper
     transition: .25s $ease
     .ico
       pointer-events: none
-      
+
   &__wrapper
     display: flex
   &__image
@@ -136,6 +136,67 @@ html.mfp-helper
         &:last-child
           font-size: 16px
           color: #40424A
+
++r(1024)
+  .card-modal
+    max-width: 865px
+    margin: 40px auto
+    .mfp-close
+      top: 25px
+      right: 30px
+      font-size: 16px
+    &__image
+      padding-left: 20px
+      padding-right: 20px
+    &__main
+      padding: 60px 75px 50px 20px
+    &__name
+      font-size: 52px
+    &__scope
+      margin-top: 16px
+      margin-bottom: 24px
+    &__category
+      font-size: 16px
+    &__rating
+      span
+        margin-right: 16px
+      .icon-rate
+        margin-right: 7px
+
+    &__description
+      padding: 16px 0 24px 0
+
+    &__text
+      font-size: 14px
+    &__icons
+      margin-top: 24px
+
+    &__icon
+      margin-right: 20px
+      span
+        margin-left: 5px
+      .ico
+        font-size: 22px
+
+    &__cta
+      margin: 24px 0
+
+    &__price
+      font-size: 38px
+      margin-right: 24px
+
+    &__table
+      margin: 21px -16px
+      &-col
+        padding: 0 16px
+      &-section
+        margin-bottom: 12px
+        span
+          &:first-child
+            font-size: 11px
+            margin-bottom: 3px
+          &:last-child
+            font-size: 14px
 
 
 // Fade-zoom animation for first dialog

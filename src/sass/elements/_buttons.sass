@@ -26,6 +26,9 @@ button
     box-shadow: 5px 10px 20px rgba($colorRed, .25)
     &:hover
       background: darken($colorRed, 10%)
+    +r(1024)
+      font-size: 16px
+      padding: 11px 13px 12px 13px
 
   &-add
     background: $colorRed
@@ -37,6 +40,9 @@ button
     color: white
     &:hover
       background: darken($colorRed, 10%)
+    +r(1024)
+      size: 38px
+      font-size: 20px
 
   &-order
     display: flex
@@ -49,12 +55,19 @@ button
     span
       display: inline-block
       margin-right: 20px
+      +r(1024)
+        margin-right: 16px
 
     .ico
       font-size: 17px
       transition: .25s $ease
+      +r(1024)
+        font-size: 15px
+
+    +r(1024)
+      font-size: 16px
+      padding: 11px 15px 12px 20px
     &:hover
       background: darken($colorRed, 10%)
       .ico
-
         transform: scale(1.2)

@@ -6,6 +6,8 @@
   .container
     display: flex
     align-items: center
+    padding-left: 0
+    padding-right: 0
     background: transparent
   &__prev, &__next
     color: white
@@ -18,3 +20,9 @@
       pointer-events: none
   &__next
     margin-left: auto
+
++r(1024)
+  .page-nav
+    top: 56px
+    &__prev, &__next
+      font-size: 25px

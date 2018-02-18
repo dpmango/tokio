@@ -146,7 +146,6 @@
     &::after
       +sprite('swiper-right')
   .swiper-button-prev
-    background: none
     &::after
       +sprite('swiper-left')
 
@@ -154,3 +153,32 @@
     transition: opacity .25s $ease
     &:hover
       opacity: .7
+
++r(1024)
+  .options-row
+    margin: 15px -70px 35px -70px
+    &__card
+      min-height: 250px
+      padding: 28px 12px
+      &--no-img
+        min-height: 85px
+      span
+        font-size: 28px
+
+  .checkbox-row
+    margin: 55px -76px 42px -76px
+    overflow: visible
+    &__card
+      flex: 0 0 180px
+      width: 180px
+      min-height: 265px
+      span
+        font-size: 34px
+        bottom: -17px
+        left: 17px
+
+    .swiper-button-next, .swiper-button-prev
+      min-height: 265px
+      // width: 42px
+      &::after
+        transform: scale(.75)

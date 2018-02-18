@@ -20,6 +20,14 @@
 a.intro-logo:hover
     background: darken(#171717, 5%)
 
++r(1024)
+  .intro-logo
+    max-width: 198px
+    padding: 16px
+    svg
+      width: 76px
+    &--no-mark
+      margin-top: -40px
 
 .intro
   margin: auto 0
@@ -101,6 +109,7 @@ a.intro-logo:hover
 
   &__styles
     margin: 15vh -10px 20vh -10px
+    padding: 0 30px
     display: flex
     align-items: center
     justify-content: center
@@ -148,3 +157,41 @@ a.intro-logo:hover
         background: rgba(#A83939, .8)
         .intro__style-num
           color: #C96363
+
++r(1024)
+  .intro
+    padding: 50px 0 40px 0
+    &__name
+      font-size: 64px
+    &__instruction
+      font-size: 15px
+    &__row
+      max-width: 730px
+    &__tags
+      margin-top: 0px
+    &__tag
+      margin: 6px
+    &__range
+      max-width: 735px
+      padding: 50px 0 40px 0
+      margin: 12vh auto 16vh auto
+    &__cta
+      transform: translateY(20px)
+
+    &__show-results
+      font-size: 19px
+      margin-bottom: 15px
+
+    &__styles
+      margin: 12vh -10px 16vh -10px
+    &__style
+      position: relative
+      flex: 0 1 auto
+      margin: 6px 3px
+      label
+        padding: 7px 25px 10px 25px
+        font-size: 16px
+      span
+        margin-right: 14px
+      &-num
+        font-size: 16px
