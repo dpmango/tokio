@@ -25,6 +25,7 @@
     "barba.js": "luruke/barba.js#^1.0.0",
     "jquery-lazy": "^1.7.7",
     "animejs": "^2.2.0",
-    "nouislider": "^11.0.3"
+    "nouislider": "^11.0.3",
+    "swiper": "^4.1.6"
   }
 }

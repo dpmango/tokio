@@ -17,15 +17,19 @@ html.mfp-helper
   margin: 50px auto
   position: relative
   .mfp-close
+    display: flex
+    justify-content: center
+    align-items: center
     top: 30px
     right: 35px
     background: #EDEDED
     border-radius: 50%
     color: #40424A
-    font-size: 45px
-    font-weight: light
+    font-size: 20px
     transition: .25s $ease
-
+    .ico
+      pointer-events: none
+      
   &__wrapper
     display: flex
   &__image

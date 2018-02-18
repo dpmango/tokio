@@ -8,7 +8,16 @@ block content
   .intro-header
     a(href="intro.html").intro-logo.intro-logo--no-mark
       include ../inline-svg/logo.svg
-
+      
+  // NAVIGATION
+  .page-nav
+    .container
+      a(href="step2.html").page-nav__prev
+        +icon('ico-left-arrow')
+      
+      a(href="#").page-nav__next.is-disabled
+        +icon('ico-right-arrow')
+            
   // STEP 2
   .intro
     .container
@@ -25,7 +34,7 @@ block content
       
       // show results link
       .intro__show-results
-        a(href="#") Показать результат (<span>23</span>)
+        a(href="catalog.html") Показать результат (<span>23</span>)
           
       .intro__cta
         a(href='catalog.html').btn.btn-primary Перейти в полный каталог вин

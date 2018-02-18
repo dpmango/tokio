@@ -1,29 +1,56 @@
 $sprite: (
 	arrow: (
-		offset-x: 0px,
-		offset-y: -30px,
+		offset-x: -42px,
+		offset-y: -64px,
 		width: 10px,
 		height: 7px,
-		total-width: 46px,
-		total-height: 37px,
+		total-width: 95px,
+		total-height: 124px,
+		image: '../img/sprite.png'
+	),
+	checked-red: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 53px,
+		height: 54px,
+		total-width: 95px,
+		total-height: 124px,
 		image: '../img/sprite.png'
 	),
 	checked: (
-		offset-x: -30px,
-		offset-y: 0px,
+		offset-x: -63px,
+		offset-y: -100px,
 		width: 16px,
 		height: 11px,
-		total-width: 46px,
-		total-height: 37px,
+		total-width: 95px,
+		total-height: 124px,
 		image: '../img/sprite.png'
 	),
 	italy: (
-		offset-x: 0px,
-		offset-y: 0px,
+		offset-x: -63px,
+		offset-y: -70px,
 		width: 20px,
 		height: 20px,
-		total-width: 46px,
-		total-height: 37px,
+		total-width: 95px,
+		total-height: 124px,
+		image: '../img/sprite.png'
+	),
+	swiper-left: (
+		offset-x: 0px,
+		offset-y: -64px,
+		width: 32px,
+		height: 60px,
+		total-width: 95px,
+		total-height: 124px,
+		image: '../img/sprite.png'
+	),
+	swiper-right: (
+		offset-x: -63px,
+		offset-y: 0px,
+		width: 32px,
+		height: 60px,
+		total-width: 95px,
+		total-height: 124px,
 		image: '../img/sprite.png'
 	),
 );
@@ -85,9 +112,18 @@ $sprite: (
 	.icon-arrow {
 		@include sprite(arrow)
 	}
+	.icon-checked-red {
+		@include sprite(checked-red)
+	}
 	.icon-checked {
 		@include sprite(checked)
 	}
 	.icon-italy {
 		@include sprite(italy)
+	}
+	.icon-swiper-left {
+		@include sprite(swiper-left)
+	}
+	.icon-swiper-right {
+		@include sprite(swiper-right)
 	}

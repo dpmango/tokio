@@ -84,11 +84,21 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin
 /* Slider size and handle placement;
 
 .noUi-horizontal
-  height: 4px
+  height: 25px
+  &::after
+    display: inline-block
+    content: ' '
+    position: absolute
+    left: 0
+    right: 0
+    height: 4px
+    top: 50%
+    transform: translate3d(0,-50%,0)
+    background: #333333
   .noUi-handle
     size: 28px
     left: -14px
-    top: -12px
+    top: -2px
 
 
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle
@@ -99,14 +109,24 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle
  * Giving the connect element a border radius causes issues with using transform: scale
 
 .noUi-target
-  background: #333333
+  background: transparent
   border-radius: 10px
 
 .noUi-connects
   border-radius: 3px
 
 .noUi-connect
-  background: #A83939
+  background: transparent
+  &::after
+    display: inline-block
+    content: ' '
+    position: absolute
+    left: 0
+    right: 0
+    height: 4px
+    top: 50%
+    transform: translate3d(0,-50%,0)
+    background: #A83939
 
 /* Handles and cursors;
 
@@ -120,9 +140,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle
   border-radius: 50%
   background: #A83939
   cursor: default
+  box-shadow: 5px 10px 20px rgba(168, 57, 57, 0.25)
+  cursor: grab
+  transition: box-shadow .25s $ease
 
 .noUi-active
-  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB
+  box-shadow: inset 0 1px 7px rgba(white, .25), 0 3px 6px -3px rgba(white, .25), 5px 10px 20px rgba(168, 57, 57, 0.25)
+
 
 /* Handle stripes;
 

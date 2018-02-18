@@ -2,14 +2,14 @@ ProjectTitle: Wine catalog
 
 PageList:
 - file: intro.html
-  ready: 80
+  ready: 90
 - file: step1.html
-  ready: 80
+  ready: 90
 - file: step2.html
-  ready: 5
+  ready: 90
 - file: step3.html
-  ready: 80
+  ready: 90
 - file: step4.html
-  ready: 80
+  ready: 90
 - file: catalog.html
-  ready: 80
+  ready: 90

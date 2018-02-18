@@ -16,7 +16,8 @@
     margin-top: -50px
     .logo-mark
       display: none
-  &:hover
+
+a.intro-logo:hover
     background: darken(#171717, 5%)
 
 
@@ -50,7 +51,8 @@
     overflow: hidden
     padding: 35px 30px
     margin: 20px
-    min-height: 280px
+    min-height: 281px
+    font-size: 0
     img
       position: absolute
       z-index: 1
@@ -88,6 +90,9 @@
     font-size: 24px
     text-align: center
     margin-bottom: 25px
+    transition: .25s $ease
+    &:hover
+      color: rgba(white, .7)
 
   &__tags
     margin-top: 15px
@@ -129,7 +134,7 @@
     position: relative
     padding-top: 70px
     max-width: 915px
-    padding: 50px 0
+    padding: 60px 0
     margin: 15vh auto 20vh auto
 
   &__styles
@@ -140,15 +145,32 @@
     flex-wrap: wrap
 
   &__style
+    position: relative
     flex: 0 1 auto
     margin: 8px 5px
-    display: flex
-    align-items: center
-    border: 1px solid #333333
-    padding: 9px 30px 12px 30px
-    border-radius: 30px
-    font-size: 18px
-    transition: .25s $ease
+    input
+      display: none
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      &:checked
+        + label
+          border-color: transparent
+          background: #A83939
+          .intro__style-num
+            color: #C96363
+    label
+      cursor: pointer
+      display: flex
+      align-items: center
+      border: 1px solid #333333
+      padding: 9px 30px 12px 30px
+      border-radius: 30px
+      font-size: 18px
+      transition: .25s $ease
     span
       display: inline-block
       margin-right: 17px
@@ -159,10 +181,11 @@
       font-size: 18px
       transition: .25s $ease
     &:hover
-      border-color: transparent
-      background: #A83939
-      .intro__style-num
-        color: #C96363
+      label
+        border-color: transparent
+        background: rgba(#A83939, .8)
+        .intro__style-num
+          color: #C96363
 
 
 .options-row
@@ -212,3 +235,110 @@
         background: #A83939
       span
         margin-bottom: auto
+
+
+.checkbox-row
+  // swiper container level
+  font-size: 0
+  margin: 80px -95px 60px -95px
+  overflow: visible
+  &__card
+    flex: 0 0 225px
+    width: 225px
+    position: relative
+    overflow: hidden
+    background: #171717
+    min-height: 330px
+    cursor: pointer
+    transition: .25s $ease
+    input
+      display: none
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      &:checked
+        + label
+          &::before
+            background-color: rgba(#050505, .8)
+          &::after
+            transform: translate(-50%, -50%) scale(1)
+    label
+      cursor: pointer
+      &::before
+        position: absolute 0
+        z-index: 4
+        display: inline-block
+        content: ' '
+        background-color: transparent
+        transition: all .25s ease-in-out
+      &::after
+        position: absolute
+        z-index: 5
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%) scale(0)
+        display: inline-block
+        content: ' '
+        +sprite(checked-red)
+        transition: transform .2s ease
+    img
+      position: absolute
+      z-index: 1
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      // will-change: filter
+      transition: .25s $ease
+    span
+      display: inline-block
+      z-index: 2
+      font-family: 'BravoRG'
+      text-transform: uppercase
+      line-height: 1
+      letter-spacing: 0.05em
+      font-size: 42px
+      text-align: center
+      position: absolute
+      bottom: -10px
+      left: 30px
+      transform-origin: left top 0
+      transform: rotate(-90deg)
+
+  &:not(.is-moving)
+    .checkbox-row__card
+      &:hover
+        img
+          filter: contrast(125%)
+
+  .swiper-button-next, .swiper-button-prev
+    background: none
+    min-height: 330px
+    top: 0
+    margin-top: 0
+    width: 52px
+    padding: 10px
+    display: flex
+    align-items: center
+    &::after
+      display: inline-block
+      content: ' '
+
+  .swiper-button-next
+    &::after
+      +sprite('swiper-right')
+  .swiper-button-prev
+    background: none
+    &::after
+      +sprite('swiper-left')
+
+  .swiper-button-next, .swiper-button-prev
+    transition: opacity .25s $ease
+    &:hover
+      opacity: .7

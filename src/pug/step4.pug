@@ -9,7 +9,16 @@ block content
     a(href="intro.html").intro-logo.intro-logo--no-mark
       include ../inline-svg/logo.svg
 
-  // STEP 2
+  // NAVIGATION
+  .page-nav
+    .container
+      a(href="step3.html").page-nav__prev
+        +icon('ico-left-arrow')
+      
+      a(href="#").page-nav__next.is-disabled
+        +icon('ico-right-arrow')
+        
+  // STEP 4
   .intro
     .container
       .intro__name Подобрать вино по параметрам
@@ -18,37 +27,55 @@ block content
       
       // tags
       .intro__styles
-        a(href="#").intro__style
-          span Цветочные
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Легкие
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Среднетелые
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Полнотелые
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Ягодные
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Фруктовые
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Пряные
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Минеральные
-          .intro__style-num 43
-        a(href="#").intro__style
-          span Сливочные
-          .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_1")
+          label(for="checkbox_1")
+            span Цветочные
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_2")
+          label(for="checkbox_2")
+            span Легкие
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_3")
+          label(for="checkbox_3")
+            span Среднетелые
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_4")
+          label(for="checkbox_4")
+            span Полнотелые
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_5")
+          label(for="checkbox_5")
+            span Ягодные
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_6")
+          label(for="checkbox_6")
+            span Фруктовые
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_7")
+          label(for="checkbox_7")
+            span Пряные
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_8")
+          label(for="checkbox_8")
+            span Минеральные
+            .intro__style-num 43
+        .intro__style
+          input(type="checkbox" id="checkbox_9")
+          label(for="checkbox_9")
+            span Сливочные
+            .intro__style-num 43
                     
       // show results link
       .intro__show-results
-        a(href="#") Показать результат (<span>23</span>)
+        a(href="catalog.html") Показать результат (<span>23</span>)
           
       .intro__cta
         a(href='catalog.html').btn.btn-primary Перейти в полный каталог вин

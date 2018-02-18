@@ -1,0 +1,20 @@
+.page-nav
+  position: absolute
+  top: 70px
+  left: 0
+  right: 0
+  .container
+    display: flex
+    align-items: center
+    background: transparent
+  &__prev, &__next
+    color: white
+    font-size: 32px
+    transition: .25s $ease
+    &:hover
+      color: rgba(white, .6)
+    &.is-disabled
+      color: rgba(white, .22)
+      pointer-events: none
+  &__next
+    margin-left: auto

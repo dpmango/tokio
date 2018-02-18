@@ -1,21 +1,7 @@
 $(document).ready(function(){
 
-  //////////
-  // Global variables
-  //////////
-
   var _window = $(window);
   var _document = $(document);
-
-  // BREAKPOINT SETTINGS
-  var bp = {
-    mobileS: 375,
-    mobile: 568,
-    tablet: 768,
-    desktop: 992,
-    wide: 1336,
-    hd: 1680
-  }
 
   var easingSwing = [.02, .01, .47, 1]; // default jQuery easing for anime.js
 
@@ -33,7 +19,6 @@ $(document).ready(function(){
 
     // development helper
     _window.on('resize', debounce(setBreakpoint, 200))
-
   }
 
   // this is a master function which should have all functionality
@@ -62,28 +47,21 @@ $(document).ready(function(){
     });
   }
 
-
   // Prevent # behavior
 	_document
     .on('click', '[href="#"]', function(e) {
   		e.preventDefault();
   	})
-    .on('click', 'a[href^="#section"]', function() { // section scroll
-      var el = $(this).attr('href');
-      $('body, html').animate({
-          scrollTop: $(el).offset().top}, 1000);
-      return false;
-    })
-
 
   //////////
   // CATALOG
   //////////
 
   _document.on('click', '.sidebar__group-head', function(){
-    $(this).parent().toggleClass('is-active')
+    var parent = $(this).parent();
+    $(this).toggleClass('is-active');
+    parent.find('.sidebar__group-contents').slideToggle()
   })
-
 
 
   //////////
@@ -91,7 +69,35 @@ $(document).ready(function(){
   //////////
 
   function initSliders(){
+    var swiper = new Swiper ('[js-slider]', {
+      direction: 'horizontal',
+      // loop: true,
+      watchOverflow: true,
+      spaceBetween: 6,
+      slidesPerView: 'auto',
+      // normalizeSlideIndex: true,
+      freeMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
 
+    swiper.on('touchStart', function(){
+      $('[js-slider]').addClass('is-moving');
+    })
+    swiper.on('slideChangeTransitionStart', function(){
+      $('[js-slider]').addClass('is-moving');
+    })
+    swiper.on('sliderMove', function(){
+      $('[js-slider]').addClass('is-moving');
+    })
+    swiper.on('touchEnd', function(){
+      $('[js-slider]').removeClass('is-moving');
+    })
+    swiper.on('slideChangeTransitionEnd', function(){
+      $('[js-slider]').removeClass('is-moving');
+    })
 
   }
 
@@ -108,6 +114,8 @@ $(document).ready(function(){
       alignTop: true,
       overflowY: 'auto',
       closeBtnInside: true,
+      closeOnContentClick: false,
+      closeMarkup: '<button title="%title%" type="button" class="mfp-close"><svg class="ico ico-close"><use xlink:href="img/sprite.svg#ico-close"></use></svg></button>',
       preloader: false,
       midClick: true,
       removalDelay: 300,
@@ -158,9 +166,14 @@ $(document).ready(function(){
   }
 
   function initPS(){
-    var container = document.querySelector('.catalog__category');
-    if ( container ){
-      new PerfectScrollbar(container);
+    var catalogCat = document.querySelector('.catalog__category');
+    if ( catalogCat ){
+      new PerfectScrollbar(catalogCat);
+    }
+
+    var sidebar = document.querySelector('.sidebar__wrapper');
+    if ( sidebar ){
+      new PerfectScrollbar(sidebar);
     }
   }
 
