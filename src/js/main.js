@@ -84,6 +84,7 @@ $(document).ready(function(){
       spaceBetween: 6,
       slidesPerView: 'auto',
       // normalizeSlideIndex: true,
+      // centeredSlides: true,
       freeMode: true,
       navigation: {
         nextEl: '.swiper-button-next',
