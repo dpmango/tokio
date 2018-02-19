@@ -151,6 +151,23 @@
     position: absolute
     bottom: 0
     right: 0
+  &__sale
+    position: absolute
+    bottom: 17%
+    right: -10px
+    background: #ED5353
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    min-size: 55px
+    span
+      color: white
+      text-align: center
+      font-weight: 700
+      font-size: 19px
+      span
+        font-size: 17px
 
   &--white
     .catalog-card
@@ -176,7 +193,7 @@
       transform: translateX(-10px)
 
 
-+r(1024)
++r($ipad)
   .catalog
     margin-left: 230px
     &--full
@@ -210,6 +227,14 @@
       bottom: -12px
       img
         max-width: 64px
+    &__sale
+      bottom: 17%
+      right: -10px
+      min-size: 44px
+      span
+        font-size: 15px
+        span
+          font-size: 13px
     &__content
       max-width: 165px
       padding: 24px 18px 44px 24px

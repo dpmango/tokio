@@ -6,7 +6,14 @@ include shared/_mixins
   .card-modal__wrapper
     // image
     .card-modal__image
-      img(src='img/wideBig.png' srcset='img/wideBig@2x.png 2x')
+      img(src='img/wineBig.png' srcset='img/wineBig@2x.png 2x')
+      .card-modal__offer
+        +icon('ico-chef')
+        span Любимые вина шефа
+        //- +icon('ico-gate')
+        //- span Японцы реккомендуют
+      .card-modal__sale
+        i.icon.icon-sale
     
     // main
     .card-modal__main
@@ -30,15 +37,31 @@ include shared/_mixins
         
         .card-modal__icons
           .card-modal__icon
-            +icon('ico-meat')
-            span Мясо
+            i.icon.icon-card-sushi
           .card-modal__icon
-            +icon('ico-soup')
-            span Суп
+            i.icon.icon-card-fish
           .card-modal__icon
-            +icon('ico-white-meat')
-            span Белое мясо
-            
+            i.icon.icon-card-soup
+          .card-modal__icon
+            i.icon.icon-card-meat
+          .card-modal__icon
+            i.icon.icon-card-nut
+              
+          //- i.icon.icon-card-sushi
+          //- i.icon.icon-card-meat
+          //- i.icon.icon-card-fish
+          //- i.icon.icon-card-desert
+          //- i.icon.icon-card-more
+          //- i.icon.icon-card-salad
+          //- i.icon.icon-card-whitemeat
+          //- i.icon.icon-card-berry
+          //- i.icon.icon-card-fruit
+          //- i.icon.icon-card-berry2
+          //- i.icon.icon-card-flower
+          //- i.icon.icon-card-grass
+          //- i.icon.icon-card-nut
+          //- i.icon.icon-card-milky
+          //- i.icon.icon-card-spicy
       
       // cta
       .card-modal__cta

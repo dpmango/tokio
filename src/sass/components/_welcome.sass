@@ -24,6 +24,8 @@
     background: #25292B
     font-size: 70px
     transition: .25s $ease
+    .icon
+      transition: .25s $ease
   &__name
     margin-top: 25px
     text-align: center
@@ -33,8 +35,10 @@
     .welcome-card__icon
       background: $colorRed
       color: white
+      .icon
+        filter: brightness(0) invert(100%)
 
-+r(1024)
++r($ipad)
   .intro
     &__welcome
       max-width: 665px
@@ -46,6 +50,9 @@
     &__icon
       size: 155px
       font-size: 56px
+      .icon
+        transform: scale(.75)
+        transform-origin: center center
     &__name
       font-size: 16px
       margin-top: 18px

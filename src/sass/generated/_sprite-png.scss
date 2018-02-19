@@ -1,56 +1,236 @@
 $sprite: (
 	arrow: (
-		offset-x: -42px,
-		offset-y: -64px,
+		offset-x: -457px,
+		offset-y: -338px,
 		width: 10px,
 		height: 7px,
-		total-width: 95px,
-		total-height: 124px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-berry: (
+		offset-x: -339px,
+		offset-y: -91px,
+		width: 67px,
+		height: 87px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-beryy2: (
+		offset-x: -249px,
+		offset-y: -96px,
+		width: 63px,
+		height: 88px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-desert: (
+		offset-x: -171px,
+		offset-y: -212px,
+		width: 54px,
+		height: 77px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-fish: (
+		offset-x: 0px,
+		offset-y: -302px,
+		width: 53px,
+		height: 76px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-flower: (
+		offset-x: -339px,
+		offset-y: 0px,
+		width: 82px,
+		height: 81px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-fruit: (
+		offset-x: -249px,
+		offset-y: 0px,
+		width: 80px,
+		height: 86px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-grass: (
+		offset-x: -94px,
+		offset-y: -212px,
+		width: 67px,
+		height: 79px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-meat: (
+		offset-x: -235px,
+		offset-y: -212px,
+		width: 54px,
+		height: 75px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-milky: (
+		offset-x: -339px,
+		offset-y: -188px,
+		width: 81px,
+		height: 69px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-more: (
+		offset-x: -127px,
+		offset-y: 0px,
+		width: 112px,
+		height: 78px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-nut: (
+		offset-x: -106px,
+		offset-y: -127px,
+		width: 72px,
+		height: 71px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-salad: (
+		offset-x: 0px,
+		offset-y: -388px,
+		width: 49px,
+		height: 77px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-soup: (
+		offset-x: -431px,
+		offset-y: 0px,
+		width: 48px,
+		height: 80px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-spicy: (
+		offset-x: -128px,
+		offset-y: -302px,
+		width: 54px,
+		height: 69px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-sushi: (
+		offset-x: 0px,
+		offset-y: -127px,
+		width: 96px,
+		height: 75px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	card-whitemeat: (
+		offset-x: 0px,
+		offset-y: -212px,
+		width: 84px,
+		height: 80px,
+		total-width: 479px,
+		total-height: 465px,
 		image: '../img/sprite.png'
 	),
 	checked-red: (
-		offset-x: 0px,
-		offset-y: 0px,
+		offset-x: -192px,
+		offset-y: -302px,
 		width: 53px,
 		height: 54px,
-		total-width: 95px,
-		total-height: 124px,
+		total-width: 479px,
+		total-height: 465px,
 		image: '../img/sprite.png'
 	),
 	checked: (
-		offset-x: -63px,
-		offset-y: -100px,
+		offset-x: -431px,
+		offset-y: -338px,
 		width: 16px,
 		height: 11px,
-		total-width: 95px,
-		total-height: 124px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	filter: (
+		offset-x: -63px,
+		offset-y: -302px,
+		width: 55px,
+		height: 69px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	flag: (
+		offset-x: -431px,
+		offset-y: -90px,
+		width: 33px,
+		height: 62px,
+		total-width: 479px,
+		total-height: 465px,
 		image: '../img/sprite.png'
 	),
 	italy: (
-		offset-x: -63px,
-		offset-y: -70px,
+		offset-x: -459px,
+		offset-y: -302px,
 		width: 20px,
 		height: 20px,
-		total-width: 95px,
-		total-height: 124px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	sale: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 117px,
+		height: 117px,
+		total-width: 479px,
+		total-height: 465px,
+		image: '../img/sprite.png'
+	),
+	slider-grids: (
+		offset-x: -431px,
+		offset-y: -302px,
+		width: 18px,
+		height: 26px,
+		total-width: 479px,
+		total-height: 465px,
 		image: '../img/sprite.png'
 	),
 	swiper-left: (
-		offset-x: 0px,
-		offset-y: -64px,
+		offset-x: -431px,
+		offset-y: -162px,
 		width: 32px,
 		height: 60px,
-		total-width: 95px,
-		total-height: 124px,
+		total-width: 479px,
+		total-height: 465px,
 		image: '../img/sprite.png'
 	),
 	swiper-right: (
-		offset-x: -63px,
-		offset-y: 0px,
+		offset-x: -431px,
+		offset-y: -232px,
 		width: 32px,
 		height: 60px,
-		total-width: 95px,
-		total-height: 124px,
+		total-width: 479px,
+		total-height: 465px,
 		image: '../img/sprite.png'
 	),
 );
@@ -112,14 +292,74 @@ $sprite: (
 	.icon-arrow {
 		@include sprite(arrow)
 	}
+	.icon-card-berry {
+		@include sprite(card-berry)
+	}
+	.icon-card-beryy2 {
+		@include sprite(card-beryy2)
+	}
+	.icon-card-desert {
+		@include sprite(card-desert)
+	}
+	.icon-card-fish {
+		@include sprite(card-fish)
+	}
+	.icon-card-flower {
+		@include sprite(card-flower)
+	}
+	.icon-card-fruit {
+		@include sprite(card-fruit)
+	}
+	.icon-card-grass {
+		@include sprite(card-grass)
+	}
+	.icon-card-meat {
+		@include sprite(card-meat)
+	}
+	.icon-card-milky {
+		@include sprite(card-milky)
+	}
+	.icon-card-more {
+		@include sprite(card-more)
+	}
+	.icon-card-nut {
+		@include sprite(card-nut)
+	}
+	.icon-card-salad {
+		@include sprite(card-salad)
+	}
+	.icon-card-soup {
+		@include sprite(card-soup)
+	}
+	.icon-card-spicy {
+		@include sprite(card-spicy)
+	}
+	.icon-card-sushi {
+		@include sprite(card-sushi)
+	}
+	.icon-card-whitemeat {
+		@include sprite(card-whitemeat)
+	}
 	.icon-checked-red {
 		@include sprite(checked-red)
 	}
 	.icon-checked {
 		@include sprite(checked)
 	}
+	.icon-filter {
+		@include sprite(filter)
+	}
+	.icon-flag {
+		@include sprite(flag)
+	}
 	.icon-italy {
 		@include sprite(italy)
+	}
+	.icon-sale {
+		@include sprite(sale)
+	}
+	.icon-slider-grids {
+		@include sprite(slider-grids)
 	}
 	.icon-swiper-left {
 		@include sprite(swiper-left)

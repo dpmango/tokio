@@ -5,7 +5,7 @@
 .ui-group
   position: relative
   margin-bottom: 20px
-  +r(1024)
+  +r($ipad)
     margin-bottom: 16px
   label
     display: block
@@ -79,7 +79,7 @@
       span
         color: rgba(#FFFFFF, .8)
 
-+r(1024)
++r($ipad)
   .ui-checkbox
     label
       &::before
@@ -107,6 +107,13 @@
       font-size: 18px
       color: white
       margin-right: 20px
+    &::after
+      display: inline-block
+      content: ' '
+      font-size: 16px
+      color: #6E6E6E
+      margin-left: 10px
+      content: 'руб.'
   &__from
     left: 0
     &::before
@@ -116,7 +123,7 @@
     &::before
       content: 'до'
 
-+r(1024)
++r($ipad)
   .ui-range
     &__from, &__to
       font-size: 16px

@@ -96,9 +96,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin
     transform: translate3d(0,-50%,0)
     background: #333333
   .noUi-handle
-    size: 28px
+    size: 40px
     left: -14px
-    top: -2px
+    top: -8px
 
 
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle
@@ -126,8 +126,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle
     height: 4px
     top: 50%
     transform: translate3d(0,-50%,0)
-    background: #A83939
-
+    // background: #A83939
+    background: linear-gradient(90deg, rgba(212, 12, 51, 0.5) -3.27%, rgba(117, 21, 38, 0.5) 153.59%), #A83939
+    
 /* Handles and cursors;
 
 .noUi-draggable
@@ -137,12 +138,23 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle
   cursor: ns-resize
 
 .noUi-handle
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
   border-radius: 50%
-  background: #A83939
+  // background: #A83939
+  background: linear-gradient(90deg, rgba(212, 12, 51, 0.5) -3.27%, rgba(117, 21, 38, 0.5) 153.59%), #A83939
   cursor: default
   box-shadow: 5px 10px 20px rgba(168, 57, 57, 0.25)
   cursor: grab
   transition: box-shadow .25s $ease
+  &::after
+    display: inline-block
+    content: ' '
+
+    +sprite('slider-grids')
 
 .noUi-active
   box-shadow: inset 0 1px 7px rgba(white, .25), 0 3px 6px -3px rgba(white, .25), 5px 10px 20px rgba(168, 57, 57, 0.25)
