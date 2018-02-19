@@ -497,7 +497,7 @@
       nav.addEventListener('click', function(event) {
           event.preventDefault();
           mode = event.currentTarget.dataset.mode;
-          iframe.style.width = parseInt(event.currentTarget.getAttribute('data-width')) + parseInt(scrollbarwidth) + 'px';
+          iframe.style.width = parseInt(event.currentTarget.getAttribute('data-width')) + 'px';
 
           body.setAttribute('data-mode','is-' + mode);
 
